@@ -46,7 +46,48 @@ Capture normal and suspicious network traffic, analyze it with Wireshark and tcp
 ## Project structure
 - pcaps/ - baseline.pcap, scan.pcap
 - snort-rules/ - local.rules, snort-lab.conf, scan-alerts.txt, baseline-alerts.txt
-- screenshots/ - proof of each step
+- numbered .png files - screenshots proving each step
+
+## Screenshots
+
+### Network interface
+![Network interface](01.ip-a.png)
+
+### Baseline capture (95 packets)
+![Baseline capture](03.baseline-capture.png)
+
+### Scan capture (409 packets)
+![Scan capture](04.scan-capture.png)
+
+### TCP SYN scan seen in tcpdump
+![tcpdump SYN packets](07.tcpdump-syn.png)
+
+### Scan statistics (199 SYN packets, 101 ports)
+![tcpdump counts](08.tcpdump-counts.png)
+
+### Custom Snort rules
+![Snort rules](09.snort-rules.png)
+
+### Snort configuration validated
+![Snort config OK](10.snort-config-ok.png)
+
+### ICMP traffic in Wireshark
+![Wireshark ICMP](18.filter-icmp.png)
+
+### DNS traffic in Wireshark
+![Wireshark DNS](19.filter-dns.png)
+
+### SYN scan pattern in Wireshark
+![Wireshark SYN scan](20.wireshark-syn-scan.png)
+
+### SYN-ACK replies (open ports)
+![Wireshark SYN-ACK](21.wireshark-syn-ack.png)
+
+### RST replies (closed ports)
+![Wireshark RST](22.wireshark-rst.png)
+
+### TCP conversations
+![Wireshark conversations](23.wireshark-conversations.png)
 
 ## Ethical note
 Scanning was done only against scanme.nmap.org, which permits it, with a small port range (1-100).
